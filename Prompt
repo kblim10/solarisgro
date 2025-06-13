@@ -1,0 +1,789 @@
+# Prompt Lengkap untuk Aplikasi Web: SolarisGro (Enterprise IoT Platform)
+
+Saya ingin Anda membuat aplikasi web full-stack bernama **SolarisGro** yang berfungsi sebagai platform kontrol dan monitoring IoT enterprise-grade yang fleksibel, scalable, secure, dan production-ready untuk deployment komersial.
+
+## 1. Executive Summary & Business Objectives
+
+SolarisGro adalah enterprise IoT platform yang memungkinkan organisasi untuk:
+- **Centralized IoT Management**: Mengelola ribuan perangkat IoT dari satu dashboard
+- **Real-time Operations**: Monitoring dan kontrol real-time dengan latency sub-100ms
+- **Enterprise Integration**: Seamless integration dengan existing enterprise systems
+- **Scalable Architecture**: Support dari startup hingga enterprise dengan jutaan devices
+- **Compliance Ready**: Built-in compliance untuk GDPR, HIPAA, SOC2, ISO27001
+- **White-label Ready**: Customizable branding untuk reseller dan partner ecosystem
+
+### Target Market
+- **Primary**: Enterprise customers (1000+ employees) dengan IoT deployments
+- **Secondary**: Mid-market companies (100-1000 employees) 
+- **Tertiary**: System integrators dan IoT solution providers
+
+### Business Model
+- **SaaS Subscription**: Tiered pricing berdasarkan device count dan features
+- **White-label Licensing**: Platform licensing untuk partners
+- **Professional Services**: Implementation, training, dan custom development
+
+## 2. Comprehensive Feature Specifications
+
+### a. Advanced Device Management & Templating
+
+**Intelligent Device Templates:**
+- **Template Marketplace**: Public template sharing dengan rating dan reviews
+- **Template Versioning**: Git-like versioning dengan migration paths
+- **Template Inheritance**: Parent-child template relationships
+- **Dynamic Templates**: Runtime template modification dan hot-swapping
+- **Template Analytics**: Usage statistics dan performance metrics
+- **Validation Rules**: Complex validation logic dengan custom functions
+- **Template Categories**: Industrial, Healthcare, Agriculture, Smart City, dll.
+
+**Enterprise Device Registration:**
+- **Bulk Import**: CSV/Excel import dengan validation dan error handling
+- **Auto-Discovery**: Network scanning untuk automatic device detection
+- **QR Code Registration**: Mobile-friendly device onboarding
+- **API-based Registration**: Programmatic device registration
+- **Device Families**: Grouping devices dengan shared configurations
+- **Geographic Mapping**: GIS integration dengan real-world coordinates
+- **Asset Integration**: Integration dengan CMDB dan asset management systems
+
+**Advanced Device Properties:**
+- **Device Metadata**: Extensible metadata system dengan custom fields
+- **Hardware Specifications**: CPU, memory, storage, sensors inventory
+- **Network Configuration**: Static IP, DHCP, VPN, cellular settings
+- **Security Profiles**: Device-specific security policies dan certificates
+- **Maintenance Schedule**: Preventive maintenance scheduling dan tracking
+- **Warranty Tracking**: Warranty expiration dan service contract management
+- **Cost Allocation**: Device cost tracking dan departmental allocation
+
+**Multi-Protocol Communication:**
+- **HTTP/HTTPS REST**: Standard RESTful API dengan OpenAPI 3.0
+- **MQTT 5.0**: Lightweight messaging dengan QoS levels
+- **CoAP**: Constrained Application Protocol untuk resource-limited devices
+- **WebSocket**: Bidirectional real-time communication
+- **LoRaWAN**: Long-range, low-power wireless protocol
+- **Modbus TCP/RTU**: Industrial protocol support
+- **OPC UA**: Industrial automation standard protocol
+- **Custom Protocols**: Plugin architecture untuk proprietary protocols
+
+### b. Enterprise Data Management & Analytics
+
+**Multi-Database Architecture:**
+- **Time-Series Database**: InfluxDB untuk sensor data dengan automatic sharding
+- **Document Database**: MongoDB untuk device metadata dan configurations
+- **Relational Database**: PostgreSQL untuk user data dan business logic
+- **Graph Database**: Neo4j untuk device relationships dan network topology
+- **Memory Cache**: Redis Cluster untuk real-time data dan session management
+- **Search Engine**: Elasticsearch untuk full-text search dan log analysis
+
+**Advanced Data Processing:**
+- **Stream Processing**: Apache Kafka + Apache Flink untuk real-time analytics
+- **Batch Processing**: Apache Spark untuk historical data analysis
+- **Data Lake**: S3-compatible storage untuk raw data archival
+- **Data Warehouse**: Clickhouse untuk OLAP queries dan reporting
+- **ETL Pipelines**: Apache Airflow untuk data transformation workflows
+- **Data Lineage**: Complete data provenance tracking
+
+**Intelligent Data Retention:**
+- **Tiered Storage**: Hot (SSD) → Warm (HDD) → Cold (Object Storage) → Archive (Glacier)
+- **Automatic Aggregation**: Smart downsampling berdasarkan data importance
+- **Compression Algorithms**: LZ4, Snappy, ZSTD untuk optimal storage
+- **Data Lifecycle Management**: Automated data movement dan deletion
+- **Compliance Retention**: Industry-specific retention policies
+- **Cross-Region Replication**: Geographic data distribution untuk disaster recovery
+
+**Advanced Analytics Engine:**
+- **Predictive Analytics**: ML models untuk forecasting dan anomaly detection
+- **Digital Twin**: Virtual representation dengan physics-based modeling
+- **Root Cause Analysis**: Automated incident investigation dengan graph analysis
+- **Correlation Engine**: Cross-device correlation analysis
+- **Statistical Analysis**: Advanced statistical functions dan distributions
+- **Time Series Forecasting**: ARIMA, Prophet, LSTM models
+- **Pattern Recognition**: Automated pattern discovery dalam data streams
+
+### c. Enterprise-Grade Security & Compliance
+
+**Zero Trust Security Architecture:**
+- **Identity Verification**: Multi-factor authentication dengan FIDO2/WebAuthn
+- **Device Authentication**: X.509 certificate-based device identity
+- **Network Segmentation**: Micro-segmentation dengan software-defined networking
+- **Continuous Monitoring**: Real-time security posture assessment
+- **Behavioral Analytics**: ML-based anomaly detection untuk users dan devices
+- **Threat Intelligence**: Integration dengan commercial threat feeds
+
+**Comprehensive Compliance Framework:**
+- **GDPR Compliance**:
+  - Data consent management dengan granular permissions
+  - Right to be forgotten dengan complete data purging
+  - Data portability dengan structured export
+  - Privacy by design architecture
+  - Data Protection Impact Assessment (DPIA) tools
+- **HIPAA Compliance**:
+  - PHI data handling dengan encryption dan access logging
+  - Business Associate Agreement (BAA) templates
+  - Audit trail dengan tamper-proof logging
+  - Risk assessment dan mitigation tools
+- **SOC 2 Type II**:
+  - Security controls implementation
+  - Availability monitoring dan SLA reporting
+  - Processing integrity verification
+  - Confidentiality protection measures
+- **ISO 27001**:
+  - Information security management system (ISMS)
+  - Risk management framework
+  - Security policy enforcement
+  - Incident management procedures
+- **PCI DSS** (if applicable):
+  - Payment data protection
+  - Secure coding practices
+  - Network security requirements
+  - Regular security testing
+
+**Advanced Encryption & Key Management:**
+- **Encryption at Rest**: AES-256 dengan Hardware Security Modules (HSM)
+- **Encryption in Transit**: TLS 1.3, DTLS untuk UDP communications
+- **Key Rotation**: Automated key rotation dengan zero-downtime
+- **Certificate Management**: Full PKI infrastructure dengan automatic renewal
+- **Secrets Management**: HashiCorp Vault integration
+- **Hardware Security**: TPM 2.0 support untuk device attestation
+
+### d. Advanced Monitoring & Alerting
+
+**Real-time Monitoring Dashboard:**
+- **Customizable Widgets**: 50+ widget types dengan drag-drop interface
+- **Multi-Screen Support**: Wall display mode dengan automatic layout
+- **Responsive Design**: Optimal viewing dari mobile hingga 4K displays
+- **Theme Engine**: Multiple themes dengan custom branding support
+- **Dashboard Templates**: Industry-specific dashboard templates
+- **Sharing & Collaboration**: Dashboard sharing dengan granular permissions
+- **Embedding**: White-label dashboard embedding untuk external sites
+
+**Intelligent Alerting System:**
+- **ML-Powered Alerts**: Machine learning untuk reducing false positives
+- **Complex Event Processing**: CEP engine untuk pattern-based alerts
+- **Alert Correlation**: Automatic grouping related alerts
+- **Escalation Matrix**: Multi-level escalation dengan on-call rotation
+- **Alert Suppression**: Intelligent suppression untuk maintenance windows
+- **Alert Analytics**: Performance metrics dan alert effectiveness analysis
+- **Custom Alert Actions**: Webhook, script execution, API calls
+
+**Multi-Channel Notifications:**
+- **Email**: HTML templates dengan attachment support
+- **SMS**: Global SMS dengan carrier redundancy
+- **Voice Calls**: Text-to-speech voice notifications
+- **Push Notifications**: Mobile app dan browser push
+- **Slack/Teams**: Rich message formatting dengan interactive buttons
+- **PagerDuty**: Integration dengan enterprise incident management
+- **ServiceNow**: Automatic ticket creation dengan context
+- **Webhook**: Custom integrations via HTTP callbacks
+
+### e. Enterprise Integration & APIs
+
+**Comprehensive API Suite:**
+- **REST API v1/v2**: Complete CRUD operations dengan pagination
+- **GraphQL API**: Flexible querying dengan real-time subscriptions
+- **gRPC API**: High-performance binary protocol untuk internal services
+- **Webhook API**: Outbound event notifications
+- **Bulk API**: Batch operations untuk mass data handling
+- **Streaming API**: Server-sent events untuk real-time updates
+- **SDK Development**: Official SDKs untuk Python, JavaScript, Java, C#, Go
+
+**Enterprise System Integration:**
+- **ERP Systems**: SAP, Oracle, Microsoft Dynamics, NetSuite
+- **CMDB**: ServiceNow, Lansweeper, Device42
+- **Identity Providers**: Active Directory, Okta, Auth0, SAML 2.0
+- **ITSM**: ServiceNow, Remedy, Cherwell
+- **BI Tools**: Tableau, Power BI, Qlik Sense, Looker
+- **Monitoring**: Prometheus, Grafana, DataDog, New Relic
+- **SIEM**: Splunk, IBM QRadar, ArcSight
+- **Cloud Platforms**: AWS IoT, Azure IoT, Google Cloud IoT
+
+**API Security & Management:**
+- **API Gateway**: Kong Enterprise dengan rate limiting dan analytics
+- **OAuth 2.0/OpenID Connect**: Industry-standard authentication
+- **API Versioning**: Semantic versioning dengan deprecation policies
+- **Rate Limiting**: Per-user, per-endpoint, dan per-application limits
+- **API Analytics**: Usage metrics, performance monitoring, error tracking
+- **Documentation**: Interactive API documentation dengan code examples
+- **Testing Tools**: Postman collections, automated API testing
+
+### f. Multi-Tenancy & White-Label Support
+
+**SaaS Multi-Tenancy:**
+- **Tenant Isolation**: Complete data dan resource isolation
+- **Custom Domains**: Tenant-specific domains dengan SSL certificates
+- **Resource Quotas**: Per-tenant resource limits dan usage monitoring
+- **Feature Flags**: Tenant-specific feature enablement
+- **Billing Integration**: Usage-based billing dengan Stripe, PayPal, invoice
+- **Tenant Management**: Self-service tenant provisioning dan management
+
+**White-Label Customization:**
+- **Branding Engine**: Complete UI customization dengan CSS variables
+- **Logo Management**: Multiple logo formats dengan automatic optimization
+- **Color Schemes**: Brand-specific color palettes dengan accessibility compliance
+- **Custom Domains**: Partner-specific domains dengan SSL
+- **Email Templates**: Branded email templates untuk all communications
+- **Mobile App**: White-label mobile app dengan custom branding
+
+## 3. Advanced Technology Stack
+
+### Frontend (Next.js 14+ Enterprise)
+```typescript
+// Core Framework
+- Next.js 14+ (App Router, Server Components, Streaming)
+- TypeScript 5+ (Strict mode, Advanced types)
+- React 18+ (Concurrent features, Suspense, Error boundaries)
+
+// State Management
+- Zustand (Global state dengan persistence)
+- TanStack Query (Server state dengan optimistic updates)
+- Jotai (Atomic state management untuk complex forms)
+
+// UI & Styling
+- shadcn/ui (Design system foundation)
+- Tailwind CSS (Utility-first styling)
+- Framer Motion (Advanced animations dan micro-interactions)
+- React Aria (Accessibility primitives)
+
+// Data Visualization
+- Recharts (Primary charting library)
+- D3.js (Custom visualizations)
+- Three.js (3D visualizations untuk digital twins)
+- Leaflet (Maps dan geospatial data)
+
+// Forms & Validation
+- React Hook Form (Performance-optimized forms)
+- Zod (Runtime type validation)
+- React Select (Advanced select components)
+
+// Real-time & Communication
+- Socket.IO Client (WebSocket communication)
+- EventSource (Server-sent events)
+- React Query (Real-time data synchronization)
+
+// Testing
+- Jest (Unit testing)
+- React Testing Library (Component testing)
+- Playwright (E2E testing)
+- Storybook (Component development dan documentation)
+
+// Build & Optimization
+- SWC (Fast bundling dan compilation)
+- Bundle Analyzer (Bundle size optimization)
+- PWA (Progressive Web App features)
+```
+
+### Backend (Node.js Enterprise)
+```typescript
+// Core Framework
+- Node.js 20+ LTS (Latest stable dengan performance improvements)
+- Express.js (Web framework dengan Helmet security)
+- TypeScript 5+ (Full type safety)
+- Fastify (Alternative high-performance framework)
+
+// Databases
+- MongoDB 7+ dengan Mongoose (Primary database)
+- PostgreSQL 15+ dengan Prisma (Relational data)
+- InfluxDB 2.x (Time-series data)
+- Redis 7+ (Caching dan session management)
+- Neo4j (Graph database untuk relationships)
+- Elasticsearch 8+ (Search dan log analysis)
+
+// Message Queue & Streaming
+- Apache Kafka (Event streaming)
+- Redis Streams (Lightweight streaming)
+- BullMQ (Background job processing)
+- Apache Pulsar (Alternative messaging system)
+
+// Authentication & Security
+- Passport.js (Authentication strategies)
+- jsonwebtoken (JWT implementation)
+- bcrypt (Password hashing)
+- Helmet (Security headers)
+- express-rate-limit (Rate limiting)
+- express-validator (Input validation)
+
+// Monitoring & Logging
+- Winston (Structured logging)
+- Prometheus Client (Metrics collection)
+- OpenTelemetry (Distributed tracing)
+- Sentry (Error tracking)
+
+// API & Communication
+- Swagger/OpenAPI (API documentation)
+- Socket.IO (WebSocket server)
+- MQTT.js (MQTT broker client)
+- gRPC (High-performance RPC)
+
+// Testing
+- Jest (Unit testing)
+- Supertest (API testing)
+- Artillery (Load testing)
+- Testcontainers (Integration testing dengan Docker)
+```
+
+### Infrastructure & DevOps
+```yaml
+# Containerization
+- Docker 24+ (Multi-stage builds, BuildKit)
+- Kubernetes 1.28+ (Container orchestration)
+- Helm 3+ (Package management)
+- Istio (Service mesh untuk microservices)
+
+# CI/CD
+- GitHub Actions / GitLab CI (Pipeline automation)
+- ArgoCD (GitOps deployment)
+- SonarQube (Code quality gates)
+- Snyk (Security vulnerability scanning)
+- Trivy (Container image scanning)
+
+# Monitoring & Observability
+- Prometheus (Metrics collection)
+- Grafana (Visualization dan alerting)
+- Jaeger (Distributed tracing)
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- AlertManager (Alert routing dan grouping)
+
+# Cloud Infrastructure
+- AWS/Azure/GCP (Multi-cloud support)
+- Terraform (Infrastructure as Code)
+- Ansible (Configuration management)
+- CloudFormation/ARM Templates (Cloud-native IaC)
+
+# Security
+- HashiCorp Vault (Secrets management)
+- Let's Encrypt (SSL/TLS certificates)
+- Falco (Runtime security monitoring)
+- OPA (Open Policy Agent untuk authorization)
+
+# Load Balancing & Proxy
+- Nginx (Reverse proxy dan load balancer)
+- Traefik (Cloud-native edge router)
+- HAProxy (High-availability load balancer)
+- Envoy (Service mesh proxy)
+```
+
+## 4. Detailed System Architecture
+
+### Microservices Architecture
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    API Gateway (Kong)                      │
+├─────────────────────────────────────────────────────────────┤
+│ Authentication │ Rate Limiting │ Load Balancing │ Monitoring │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────┬─────────────────┬─────────────────┬─────────────────┐
+│  User Service   │ Device Service  │  Data Service   │ Alert Service   │
+│                 │                 │                 │                 │
+│ • User mgmt     │ • Device reg    │ • Data ingestion│ • Rule engine   │
+│ • Auth tokens   │ • Templates     │ • Stream proc   │ • Notifications │
+│ • Permissions   │ • Commands      │ • Analytics     │ • Escalations   │
+└─────────────────┴─────────────────┴─────────────────┴─────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Message Bus (Kafka)                     │
+├─────────────────────────────────────────────────────────────┤
+│     Event Streaming │ Device Events │ User Actions         │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────┬─────────────────┬─────────────────┬─────────────────┐
+│    MongoDB      │   PostgreSQL    │    InfluxDB     │     Redis       │
+│                 │                 │                 │                 │
+│ • Device meta   │ • User data     │ • Sensor data   │ • Cache         │
+│ • Templates     │ • Billing       │ • Time series   │ • Sessions      │
+│ • Configurations│ • Audit logs    │ • Analytics     │ • Real-time     │
+└─────────────────┴─────────────────┴─────────────────┴─────────────────┘
+```
+
+### Data Flow Architecture
+```
+Device → MQTT Broker → Stream Processor → Database → Real-time Dashboard
+   ↑         ↓              ↓                ↓              ↑
+   │    Message Queue → Analytics Engine → Alert Engine → Notification
+   │         ↓              ↓                ↓              ↓
+   └── Command Queue ← Control Service ← User Interface ← User Action
+```
+
+## 5. Enterprise Project Structure
+
+```
+SolarisGro/
+├── .github/
+│   ├── workflows/           # GitHub Actions CI/CD
+│   ├── ISSUE_TEMPLATE/     # Issue templates
+│   └── PULL_REQUEST_TEMPLATE.md
+├── docs/
+│   ├── architecture/       # System architecture docs
+│   ├── api/               # API documentation
+│   ├── deployment/        # Deployment guides
+│   ├── user-guide/        # End-user documentation
+│   └── development/       # Developer documentation
+├── infrastructure/
+│   ├── kubernetes/        # K8s manifests
+│   │   ├── base/
+│   │   ├── overlays/
+│   │   └── helm-charts/
+│   ├── terraform/         # Infrastructure as Code
+│   │   ├── modules/
+│   │   ├── environments/
+│   │   └── providers/
+│   ├── ansible/          # Configuration management
+│   └── docker/           # Docker configurations
+├── monitoring/
+│   ├── prometheus/       # Metrics configuration
+│   ├── grafana/         # Dashboard definitions
+│   ├── alertmanager/    # Alert routing
+│   └── jaeger/          # Tracing configuration
+├── scripts/
+│   ├── deployment/      # Deployment scripts
+│   ├── database/        # Migration scripts
+│   ├── testing/         # Test automation
+│   └── utilities/       # Helper scripts
+├── frontend/
+│   ├── .next/
+│   ├── public/
+│   │   ├── icons/
+│   │   ├── images/
+│   │   └── locales/     # i18n translations
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── (dashboard)/
+│   │   │   │   ├── devices/
+│   │   │   │   ├── analytics/
+│   │   │   │   ├── alerts/
+│   │   │   │   └── settings/
+│   │   │   ├── api/     # API routes
+│   │   │   ├── auth/    # Authentication pages
+│   │   │   └── admin/   # Admin interface
+│   │   ├── components/
+│   │   │   ├── ui/      # shadcn/ui components
+│   │   │   ├── charts/  # Chart components
+│   │   │   ├── forms/   # Form components
+│   │   │   ├── layout/  # Layout components
+│   │   │   ├── dashboard/ # Dashboard widgets
+│   │   │   └── device/  # Device-specific components
+│   │   ├── lib/
+│   │   │   ├── api/     # API client
+│   │   │   ├── auth/    # Authentication utilities
+│   │   │   ├── utils/   # General utilities
+│   │   │   ├── validations/ # Zod schemas
+│   │   │   ├── constants/   # App constants
+│   │   │   └── types/   # TypeScript definitions
+│   │   ├── hooks/
+│   │   │   ├── api/     # API hooks
+│   │   │   ├── auth/    # Authentication hooks
+│   │   │   ├── device/  # Device management hooks
+│   │   │   └── realtime/ # Real-time data hooks
+│   │   ├── stores/
+│   │   │   ├── auth.ts
+│   │   │   ├── device.ts
+│   │   │   ├── dashboard.ts
+│   │   │   └── settings.ts
+│   │   ├── styles/
+│   │   │   ├── globals.css
+│   │   │   └── components.css
+│   │   └── middleware.ts
+│   ├── tests/
+│   │   ├── __mocks__/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   └── e2e/
+│   ├── .env.example
+│   ├── .env.local
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   ├── jest.config.js
+│   ├── playwright.config.ts
+│   └── package.json
+├── backend/
+│   ├── src/
+│   │   ├── services/
+│   │   │   ├── user-service/
+│   │   │   │   ├── controllers/
+│   │   │   │   ├── models/
+│   │   │   │   ├── routes/
+│   │   │   │   ├── middleware/
+│   │   │   │   └── tests/
+│   │   │   ├── device-service/
+│   │   │   ├── data-service/
+│   │   │   ├── alert-service/
+│   │   │   └── shared/
+│   │   │       ├── database/
+│   │   │       ├── messaging/
+│   │   │       ├── auth/
+│   │   │       ├── logging/
+│   │   │       └── utils/
+│   │   ├── api-gateway/
+│   │   │   ├── routes/
+│   │   │   ├── middleware/
+│   │   │   ├── plugins/
+│   │   │   └── config/
+│   │   ├── websocket/
+│   │   │   ├── handlers/
+│   │   │   ├── middleware/
+│   │   │   └── events/
+│   │   ├── mqtt-broker/
+│   │   │   ├── handlers/
+│   │   │   ├── security/
+│   │   │   └── plugins/
+│   │   ├── stream-processor/
+│   │   │   ├── processors/
+│   │   │   ├── analytics/
+│   │   │   └── ml-models/
+│   │   └── jobs/
+│   │       ├── data-aggregation/
+│   │       ├── alert-processing/
+│   │       ├── cleanup/
+│   │       └── reporting/
+│   ├── tests/
+│   │   ├── unit/
+│   │   ├── integration/
+│   │   ├── load/
+│   │   └── security/
+│   ├── migrations/
+│   │   ├── mongodb/
+│   │   ├── postgresql/
+│   │   └── influxdb/
+│   ├── docker-compose.yml
+│   ├── docker-compose.override.yml
+│   ├── Dockerfile
+│   ├── .env.example
+│   └── package.json
+├── mobile/                 # Future React Native app
+│   ├── android/
+│   ├── ios/
+│   ├── src/
+│   └── package.json
+├── desktop/               # Future Electron app
+│   ├── src/
+│   ├── build/
+│   └── package.json
+├── cli/                   # Command-line interface
+│   ├── src/
+│   ├── tests/
+│   └── package.json
+├── sdk/                   # Official SDKs
+│   ├── javascript/
+│   ├── python/
+│   ├── java/
+│   ├── csharp/
+│   └── go/
+├── examples/              # Integration examples
+│   ├── arduino/
+│   ├── raspberry-pi/
+│   ├── esp32/
+│   └── webhooks/
+├── security/
+│   ├── security-policies.md
+│   ├── vulnerability-disclosure.md
+│   └── security-testing/
+├── compliance/
+│   ├── gdpr/
+│   ├── hipaa/
+│   ├── soc2/
+│   └── iso27001/
+├── docker-compose.yml
+├── docker-compose.production.yml
+├── .gitignore
+├── .env.example
+├── LICENSE
+├── README.md
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+├── SECURITY.md
+└── CODEOWNERS
+```
+
+## 6. Advanced Security Implementation
+
+### Multi-Layer Security Architecture
+```typescript
+// Security Layers Implementation
+interface SecurityLayers {
+  // Layer 1: Network Security
+  networkSecurity: {
+    firewall: 'iptables/ufw with custom rules';
+    ddosProtection: 'Cloudflare/AWS Shield';
+    vpn: 'WireGuard for secure access';
+    networkSegmentation: 'VLAN isolation';
+  };
+  
+  // Layer 2: Application Security
+  applicationSecurity: {
+    waf: 'Web Application Firewall';
+    inputValidation: 'Comprehensive sanitization';
+    sqlInjectionPrevention: 'Parameterized queries';
+    xssProtection: 'Content Security Policy';
+    csrfProtection: 'CSRF tokens';
+  };
+  
+  // Layer 3: Authentication & Authorization
+  authentication: {
+    multiFactorAuth: '2FA/TOTP/FIDO2';
+    singleSignOn: 'SAML 2.0/OpenID Connect';
+    biometricAuth: 'WebAuthn integration';
+    sessionManagement: 'Secure session handling';
+  };
+  
+  // Layer 4: Data Security
+  dataSecurity: {
+    encryptionAtRest: 'AES-256 with HSM';
+    encryptionInTransit: 'TLS 1.3';
+    keyManagement: 'HashiCorp Vault';
+    dataClassification: 'Automated PII detection';
+  };
+  
+  // Layer 5: Infrastructure Security
+  infrastructureSecurity: {
+    containerSecurity: 'Distroless images, security scanning';
+    secretsManagement: 'Kubernetes secrets + Vault';
+    vulnerabilityScanning: 'Continuous security monitoring';
+    complianceMonitoring: 'Automated compliance checking';
+  };
+}
+```
+
+### Compliance Implementation Details
+
+**GDPR Implementation:**
+```typescript
+interface GDPRCompliance {
+  dataConsent: {
+    granularConsent: boolean;
+    consentWithdrawal: boolean;
+    consentTracking: boolean;
+    childConsent: boolean; // Under 16 years
+  };
+  
+  dataRights: {
+    rightToAccess: 'Complete data export';
+    rightToRectification: 'Data correction interface';
+    rightToErasure: 'Complete data deletion';
+    rightToPortability: 'Structured data export';
+    rightToRestrict: 'Processing limitation';
+  };
+  
+  dataProtection: {
+    privacyByDesign: boolean;
+    dataMinimization: boolean;
+    purposeLimitation: boolean;
+    storagelimitation: boolean;
+    accuracyPrinciple: boolean;
+  };
+  
+  governance: {
+    dataProtectionOfficer: boolean;
+    impactAssessment: boolean;
+    breachNotification: '72-hour notification';
+    recordsOfProcessing: boolean;
+  };
+}
+```
+
+## 7. Performance & Scalability Specifications
+
+### Performance Targets
+```yaml
+# Response Time Requirements
+api_response_time:
+  authentication: <100ms
+  device_operations: <200ms
+  data_queries: <500ms
+  complex_analytics: <2s
+  dashboard_load: <1s
+
+# Throughput Requirements
+throughput:
+  concurrent_users: 50000+
+  api_requests_per_second: 10000+
+  device_messages_per_second: 100000+
+  database_operations_per_second: 50000+
+
+# Scalability Targets
+scalability:
+  devices_per_tenant: 1000000+
+  data_points_per_second: 10000000+
+  historical_data_retention: 10_years
+  geographic_regions: multi_region
+  
+# Availability Requirements
+availability:
+  uptime_sla: 99.95%
+  planned_downtime: <4h/month
+  disaster_recovery_time: <15min
+  data_backup_frequency: continuous
+```
+
+### Auto-Scaling Configuration
+```yaml
+# Kubernetes Horizontal Pod Autoscaler
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: solarisgro-api
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: solarisgro-api
+  minReplicas: 3
+  maxReplicas: 100
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 10
+        periodSeconds: 60
+```
+
+## 8. Comprehensive Testing Strategy
+
+### Testing Pyramid Implementation
+```typescript
+// Testing Configuration
+interface TestingStrategy {
+  // Unit Tests (70% of tests)
+  unitTests: {
+    coverage: '>90%';
+    framework: 'Jest + React Testing Library';
+    mocking: 'MSW for API mocking';
+    snapshot: 'Component snapshot testing';
+  };
+  
+  // Integration Tests (20% of tests)
+  integrationTests: {
+    apiTesting: 'Supertest for REST APIs';
+    databaseTesting: 'Test containers';
+    serviceTesting: 'Cross-service integration';
+    contractTesting: 'Pact for API contracts';
+  };
+  
+  // E2E Tests (10% of tests)
+  e2eTests: {
+    framework: 'Playwright';
+    browsers: 'Chrome, Firefox, Safari';
+    mobile: 'Mobile browser testing';
+    visual: 'Visual regression testing';
