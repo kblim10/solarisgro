@@ -10,6 +10,9 @@ const authRoutes = require('./routes/authRoutes');
 const deviceRoutes = require('./routes/deviceRoutes');
 const templateRoutes = require('./routes/templateRoutes');
 
+const connectDB = require('./config/database');
+connectDB();
+
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
